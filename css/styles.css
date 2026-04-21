@@ -32,13 +32,6 @@ html{
     scroll-behavior: smooth;
 }
 
-/* 
-Background → #FFFFFF
-Text → #0F172A
-Primary → #2563EB
-Accent → #14B8A6
-Border → #E5E7EB
-*/
 
 
 body{
@@ -379,8 +372,18 @@ header nav a:hover{
     opacity: 0;
 }
 
+
+
 .projects-website:hover .overlay{
     opacity: 1;
+}
+
+.projects-website:hover .overlay a{
+    background-color: darkblue;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    color: whitesmoke;
+    font-weight: 400;
 }
 
 
