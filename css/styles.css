@@ -322,6 +322,76 @@ header nav a:hover{
     padding: 1rem;
 }
 
+.all-projects,.all-ai-projects,.all-fullstack-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.ai-fullstack-projects{
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* AI Projects area */
+.ai-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.video-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    gap:1rem;
+}
+
+.video-card video{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.content p{
+    text-align: center;
+}
+
+.video-card .buttons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.video-card .buttons a{
+    background-color: darkblue;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+
+/* Fullstack Projects Area */
+
 .project-list{
     display: grid;
     grid-template-columns: 1fr;
@@ -602,6 +672,17 @@ footer div:last-child{
     .skills h3{
         font-size: 1.4rem;
     }
+
+    /* Projects */
+
+    .ai-projects,.project-list{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,auto);
+        gap: 1rem;
+    }
+
+    
     
     
 
@@ -674,9 +755,24 @@ footer div:last-child{
 
 
     /* Preject Section */
+
+    .ai-projects{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .video-card{
+        gap: 1rem;
+    }
+
+    .content{
+        gap: 1 rem;
+    }
+
+
     .project-list{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:  auto ;
     }
 
 
